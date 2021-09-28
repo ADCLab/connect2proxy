@@ -41,38 +41,33 @@ class MyProxy:
             self.useProxies=allProxies.copy()
         self.useableProxies=self.useProxies.copy()
         if len(self.useProxies)==0:
-            raise NameError('No country or region by that name.')
-            
+            raise NameError('No country or region by that name.')            
         self.os=system()
             
     def setProxyByURL(self,url,port=6060):
         proxy = 'http://%s:%s@%s:%d'%(self.user,self.passwd,url,port)
         self.proxy_url=proxy
         os.environ['http_proxy'] = proxy 
-        os.environ['HTTP_PROXY'] = proxy
         os.environ['https_proxy'] = proxy
-        os.environ['HTTPS_PROXY'] = proxy
+        if system()!='Windows:'
+            os.environ['HTTP_PROXY'] = proxy
+            os.environ['HTTPS_PROXY'] = proxy
         
     def resetProxy(self):
         del os.environ['http_proxy'] 
-        del os.environ['HTTP_PROXY']
         del os.environ['https_proxy']
-        del os.environ['HTTPS_PROXY']
+        if system()!='Windows:'
+            del os.environ['HTTP_PROXY']
+            del os.environ['HTTPS_PROXY']
         self.proxy_url=None
-
         
     def setProxyByRand(self):
         if len(self.useableProxies)==0:
-            self.useableProxies=self.useProxies.copy()
-    
-        
+            self.useableProxies=self.useProxies.copy() 
         self.currentProxy=self.useableProxies.sample()
         self.setProxyByURL(url=self.currentProxy.iloc[0]['Hostnames'])
         if self.trackUsed:
             self.useableProxies.drop(labels=self.currentProxy.index[0],inplace=True)
-            
-        
-        print(self.currentProxy.index)
         
     def testIP(self):
         response = requests.get("https://api.myip.com/")
