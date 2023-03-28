@@ -18,9 +18,6 @@ def configParserFillNone(config,section,key,defaultVal=None):
 class MyProxy:
     def __init__(self,configFile=None,proxies='proxies_latest.csv',user=None,passwd=None,restrictCountries=None,restrictRegions=None,randomize=True,trackUsed=True):
         allProxies=read_csv(proxies)
-        # allProxies=read_csv('proxies_latest.csv')
-        # allProxies=read_csv('proxies2.csv')
-
         if isinstance(configFile,str):
             config=ConfigParser(allow_no_value=True)
             config.read(configFile)
