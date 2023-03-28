@@ -1,0 +1,60 @@
+Region,Country,City,Hostnames
+Americas,Brazil,Sau Paulo,br.torguard.org
+Americas,Brazil,Sau Paulo,br2.torguard.org
+Americas,Chile,Vina del Mar,ch.torguard.org
+Americas,Canada,Toronto,ca.torguard.org
+Americas,Canada,Vancouver,cavan.torguard.org
+Americas,Mexico,Mexico City,mx.torguard.org
+Americas,USA,Atlanta,us-atl.torguard.org
+Americas,USA,LA,us-la.torguard.org
+Americas,USA,Miami,us-fl.torguard.org
+Americas,USA,Dallas,us-dal.torguard.org
+Americas,USA,New Jersey,us-nj.torguard.org
+Americas,USA,New York,us-ny.torguard.org
+Americas,USA,Chicago,us-chi.torguard.org
+Americas,USA,Las Vegas,us-lv.torguard.org
+Americas,USA,San Francisco,us-sf.torguard.org
+Americas,USA,Seattle,us-sa.torguard.org
+Americas,USA,Salt Lake City,us-slc.torguard.org
+Europe,Austria,Vienna,aus.torguard.org
+Europe,Belgium,Brussels,bg.torguard.org
+Europe,Bulgaria,Sofia,bul.torguard.org
+Europe,Czech Republic,Prague,cz.torguard.org
+Europe,Denmark,Copenhagen,dn.torguard.org
+Europe,Finland,Helsinki,fn.torguard.org
+Europe,France,Paris,fr.torguard.org
+Europe,Germany,Frankfurt,ger.torguard.org
+Europe,Greece,Athens,gre.torguard.org
+Europe,Hungary,Budapest,hg.torguard.org
+Europe,Iceland,Reykjavik,ice.torguard.org
+Europe,Ireland,Dublin,ire.torguard.org
+Europe,Italy,Milan,it.torguard.org
+Europe,Moldova,Chisinau,md.torguard.org
+Europe,Netherlands,Amsterdam,nl.torguard.org
+Europe,Norway,Oslo,no.torguard.org
+Europe,Poland,Warsaw,pl.torguard.org
+Europe,Portugal,Lisbon,pg.torguard.org
+Europe,Romania,Bucharest,ro.torguard.org
+Europe,Russia,Moscow,ru.torguard.org
+Europe,Slovakia,Bratislava,slk.torguard.org
+Europe,Spain,Madrid,sp.torguard.org
+Europe,Sweden,Stockholm,swe.torguard.org
+Europe,Switzerland,Zurich,swiss.torguard.org
+Europe,Turkey,Istanbul,tk.torguard.org
+Europe,Ukraine,Kyiv,ukr.torguard.org
+Europe,United Kingdom,Manchester,uk.man.torguard.org
+Europe,United Kingdom,London,uk.torguard.org
+Asia,Australia,Sydney,au.torguard.org
+Asia,Hong Kong,Hong Kong,hk.torguard.org
+Asia,Indonesia,Jakarta,id.torguard.org
+Asia,Japan,Tokyo,jp.torguard.org
+Asia,South Korea,Seoul,sk.torguard.org
+Asia,New Zealand,Auckland,nz.torguard.org
+Asia,Singapore,Singapore,sg.torguard.org
+Asia,Taiwan,Taipei,tw.torguard.org
+Asia,Thailand,Bangkok,th.torguard.org
+"Africa, India & Middle East",India,Mumbai,in.torguard.org
+"Africa, India & Middle East",Israel,Tel Aviv,isr-loc1.torguard.org
+"Africa, India & Middle East",Israel,Petah Tikva,isr-loc2.torguard.org
+"Africa, India & Middle East",South Africa,Johannesburg,sa.torguard.org
+"Africa, India & Middle East",UAE,Dubai,uae.torguard.org
