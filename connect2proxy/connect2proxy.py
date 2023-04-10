@@ -16,8 +16,8 @@ def configParserFillNone(config,section,key,defaultVal=None):
 
 
 class MyProxy:
-    def __init__(self,configFile=None,user=None,passwd=None,restrictCountries=None,restrictRegions=None,randomize=True,trackUsed=True):
-        allProxies=read_csv('proxies.csv')
+    def __init__(self,configFile=None,proxies='proxies_latest.csv',user=None,passwd=None,restrictCountries=None,restrictRegions=None,randomize=True,trackUsed=True):
+        allProxies=read_csv(proxies)
         if isinstance(configFile,str):
             config=ConfigParser(allow_no_value=True)
             config.read(configFile)
@@ -44,19 +44,22 @@ class MyProxy:
             raise NameError('No country or region by that name.')            
         self.os=system()
             
-    def setProxyByURL(self,url,port=6060):
-        proxy = 'http://%s:%s@%s:%d'%(self.user,self.passwd,url,port)
-        self.proxy_url=proxy
-        os.environ['http_proxy'] = proxy 
-        os.environ['https_proxy'] = proxy
-        if system()!='Windows:'
-            os.environ['HTTP_PROXY'] = proxy
-            os.environ['HTTPS_PROXY'] = proxy
+    def setProxyByURL(self,url,port=7070):
+        proxy_http= 'http://%s:%s@%s:%d'%(self.user,self.passwd,url,port)
+        proxy_https = 'https://%s:%s@%s:%d'%(self.user,self.passwd,url,port)
+
+        # print(proxy_https)
+        self.proxy_url={'http':proxy_http,'https':proxy_https}
+        os.environ['http_proxy'] = proxy_http 
+        os.environ['https_proxy'] = proxy_https
+        if system()!='Windows':
+            os.environ['HTTP_PROXY'] = proxy_http
+            os.environ['HTTPS_PROXY'] = proxy_https
         
     def resetProxy(self):
         del os.environ['http_proxy'] 
         del os.environ['https_proxy']
-        if system()!='Windows:'
+        if system()!='Windows':
             del os.environ['HTTP_PROXY']
             del os.environ['HTTPS_PROXY']
         self.proxy_url=None

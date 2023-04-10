@@ -1,0 +1,62 @@
+Country,Region,City,Hostnames
+Brazil LOC1,Americas,Sau Paulo,br.secureconnect.me
+Brazil LOC2,Americas,Sau Paulo,br2.secureconnect.me
+Chile,Americas,Vina del Mar,ch.secureconnect.me
+Canada,Americas,Toronto,ca.secureconnect.me
+Canada,Americas,Vancouver,cavan.secureconnect.me
+Mexico,Americas,Mexico City,mx.secureconnect.me
+USA,Americas,Atlanta,us-atl.secureconnect.me
+USA,Americas,LA,us-la.secureconnect.me
+USA,Americas,Miami,us-fl.secureconnect.me
+USA,Americas,Dallas,us-dal.secureconnect.me
+USA,Americas,New Jersey,us-nj.secureconnect.me
+USA,Americas,New York,us-ny.secureconnect.me
+USA,Americas,Chicago,us-chi.secureconnect.me
+USA,Americas,Las Vegas,us-lv.secureconnect.me
+USA,Americas,San Francisco,us-sf.secureconnect.me
+USA,Americas,Seattle,us-sa.secureconnect.me
+USA,Americas,Salt Lake City,us-slc.secureconnect.me
+Austria,Europe,Vienna,aus.secureconnect.me
+Belgium,Europe,Brussels,bg.secureconnect.me
+Bulgaria,Europe,Sofia,bul.secureconnect.me
+Czech Republic,Europe,Prague,cz.secureconnect.me
+Denmark,Europe,Copenhagen,dn.secureconnect.me
+Finland,Europe,Helsinki,fn.secureconnect.me
+France,Europe,Paris,fr.secureconnect.me
+Germany,Europe,Frankfurt,ger.secureconnect.me
+Greece,Europe,Athens,gre.secureconnect.me
+Hungary,Europe,Budapest,hg.secureconnect.me
+Iceland,Europe,Reykjavik,ice.secureconnect.me
+Ireland,Europe,Dublin,ire.secureconnect.me
+Italy,Europe,Milan,it.secureconnect.me
+Moldova,Europe,Chisinau,md.secureconnect.me
+Netherlands,Europe,Amsterdam,nl.secureconnect.me
+Norway,Europe,Oslo,no.secureconnect.me
+Poland,Europe,Warsaw,pl.secureconnect.me
+Portugal,Europe,Lisbon,pg.secureconnect.me
+Romania,Europe,Bucharest,ro.secureconnect.me
+Russia,Europe,Moscow,ru.secureconnect.me
+Serbia,Europe,Belgrade,serbia.secureconnect.me
+Slovakia,Europe,Bratislava,slk.secureconnect.me
+Spain,Europe,Madrid,sp.secureconnect.me
+Sweden,Europe,Stockholm,swe.secureconnect.me
+Switzerland,Europe,Zurich,swiss.secureconnect.me
+Turkey,Europe,Istanbul,tk.secureconnect.me
+Ukraine,Europe,Kyiv,ukr.secureconnect.me
+United Kingdom,Europe,Manchester,uk.man.secureconnect.me
+United Kingdom,Europe,London,uk.secureconnect.me
+Australia,Asia,Sydney,au.secureconnect.me
+Hong Kong,Asia,Hong Kong,hk.secureconnect.me
+Indonesia,Asia,Jakarta,id.secureconnect.me
+Japan,Asia,Tokyo,jp.secureconnect.me
+South Korea,Asia,Seoul,sk.secureconnect.me
+New Zealand,Asia,Auckland,nz.secureconnect.me
+Singapore,Asia,Singapore,sg.secureconnect.me
+Taiwan,Asia,Taipei,tw.secureconnect.me
+Thailand,Asia,Bangkok,th.secureconnect.me
+Bahrain,Other,Manama,bh.secureconnect.me
+India,Other,Mumbai,in.secureconnect.me
+Israel,Other,Tel Aviv,isr-loc1.secureconnect.me
+Israel,Other,Petah Tikva,isr-loc2.secureconnect.me
+South Africa,Other,Johannesburg,sa.secureconnect.me
+UAE,Other,Dubai,uae.secureconnect.me
