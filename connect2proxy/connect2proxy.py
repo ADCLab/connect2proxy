@@ -1,12 +1,14 @@
-from pandas import DataFrame, read_csv
-from configparser import ConfigParser
+from pandas import read_csv
 from platform import system
 import os
 import requests
+import yaml
+import pkgutil
+import io
 
-def configParserFillNone(config,section,key,defaultVal=None):
+def splitString(cVal,defaultVal=None):
     try:
-        val=config[section][key].split(',')
+        val=cVal.split(',')
         if val==['']:
             val=defaultVal
     except:
@@ -16,17 +18,22 @@ def configParserFillNone(config,section,key,defaultVal=None):
 
 
 class MyProxy:
-    def __init__(self,configFile=None,proxies='proxies_latest.csv',user=None,passwd=None,restrictCountries=None,restrictRegions=None,randomize=True,trackUsed=True):
-        allProxies=read_csv(proxies)
+    def __init__(self,configFile=None,proxies=None,user=None,passwd=None,restrictCountries=None,restrictRegions=None,randomize=True,trackUsed=True):
+        if proxies is None:
+            allProxies=read_csv(  io.BytesIO( pkgutil.get_data(__name__, 'proxies_latest.csv')  )  )
+        else:
+            allProxies=read_csv(proxies)
+            
         if isinstance(configFile,str):
-            config=ConfigParser(allow_no_value=True)
-            config.read(configFile)
-            user=configParserFillNone(config,'login','user')[0]
-            passwd=configParserFillNone(config,'login','passwd')[0]
-            useCountries=configParserFillNone(config,'regions','useCountries')
-            useRegions=configParserFillNone(config,'regions','useRegions')
-            trackUsed=eval(configParserFillNone(config,'cycling','trackUsed',True)[0])
-            randomize=eval(configParserFillNone(config,'cycling','randomize',True)[0])
+            with open(configFile, 'r') as stream:
+                config = yaml.safe_load(stream)
+                
+            user=config['user']
+            passwd=config['passwd']
+            useCountries=splitString(config['useCountries'])
+            useRegions=splitString(config['useRegions'])
+            trackUsed=config['passwd']
+            randomize=config['randomize']
 
         self.user=user
         self.passwd=passwd
