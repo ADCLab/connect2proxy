@@ -1,6 +1,6 @@
 from connect2proxy import MyProxy
 
-myproxy=MyProxy(configFile='proxyconfig.cfg')
+myproxy=MyProxy(configFile='proxyconfig.yml')
 myproxy.testIP()
 myproxy.setProxyByRand()
 myproxy.testIP()
