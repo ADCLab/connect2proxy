@@ -1,0 +1,6 @@
+user: torguardusername
+passwd: torguardpassword
+useCountries: 
+useRegions: Americas,Europe
+randomize: True
+trackUsed: True
